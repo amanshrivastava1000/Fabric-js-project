@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# 🎨 Image Editor with Fabric.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple **Image Editor** built using **Fabric.js**.  
+It allows users to:
 
-Currently, two official plugins are available:
+- Add different shapes (Rectangle, Square, Triangle) on an image.
+- Search and add random images using the **Pixabay API** based on user input.
+- Edit the added shapes and images freely on the canvas.
+- Download the final edited image.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✏️ Add Rectangle, Square, Triangle to the canvas.
+- 🖼️ Search images using **Pixabay API** and add them to the canvas.
+- 🧩 Move, resize, rotate, and style shapes and images.
+- 📥 Download the edited canvas as an image.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React.js**  
+- **TypeScript**  
+- **Fabric.js**  
+- **Pixabay API**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📸 Demo
+
+👉 [Live Demo Here](https://image-editor-with-fabricjs.netlify.app/)
+
+---
+
+## 📦 Installation and Setup
+
+Follow these steps to run the project locally:
+
+1. **Download the project** (ZIP file) and extract it.
+
+2. **Install dependencies**  
+   Open your terminal inside the project folder and run:
+   ```bash
+   npm install
+
+3) npm run dev
+
+4) localhost:5173
